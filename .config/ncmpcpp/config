@@ -1,0 +1,8 @@
+mpd_host = "/usr/local/var/run/mpd.sock"
+mpd_music_dir = "/Volumes/Storage/Music"
+mpd_connection_timeout = "5"
+
+playlist_disable_highlight_delay = "0"
+playlist_display_mode = "classic"
+
+mouse_support = "no"
