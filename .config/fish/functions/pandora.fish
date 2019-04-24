@@ -1,7 +1,7 @@
-# Defined in /var/folders/pg/8dr4cp011z396hgxhmnjkd2h0000gn/T//fish.12m6gR/pandora.fish @ line 1
+# Defined in /var/folders/pg/8dr4cp011z396hgxhmnjkd2h0000gn/T//fish.y9rKQw/pandora.fish @ line 2
 function pandora
 	set-profile dark
-    set-title Pandora
-    pianobar
-    set-title
+	set-title Pandora
+	pianobar
+	set-title
 end
