@@ -1,16 +1,18 @@
-# Paths:
-set PATH /usr/local/opt/coreutils/libexec/gnubin $PATH
+set PATH /usr/local/opt/coreutils/libexec/gnubin /usr/local/sbin $PATH
+set -x GOPATH $HOME/Projects/go
 
 # Environment variables:
 set -x EDITOR 'vim'
 set -x LS_COLORS 'di=1'
-set -x pure_symbol_prompt '>'
 
-# Wine
-set -x WINEPREFIX /Volumes/Storage/.wine
+# pure:
+set pure_color_mute brcyan
+set pure_symbol_prompt '>'
+
+# Wine:
 set -x FREETYPE_PROPERTIES truetype:interpreter-version=35
 
-# Aliases
+# Aliases:
 alias ls='ls -ohAH --color --group-directories-first'
 alias vim='nvim'
 alias vi='vim'
