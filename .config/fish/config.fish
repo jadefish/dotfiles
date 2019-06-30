@@ -6,7 +6,8 @@ set -x EDITOR 'vim'
 set -x LS_COLORS 'di=1'
 
 # pure:
-set pure_color_mute brcyan
+set -xU pure_color_mute (set_color brcyan)
+set -xU pure_color_success (set_color normal)
 set pure_symbol_prompt '>'
 
 # Wine:
