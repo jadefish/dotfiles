@@ -18,7 +18,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "⇧ Mouse 6 -> App Exposé",
+                                "description": "⌘ Mouse 6 -> App Exposé",
                                 "from": {
                                     "modifiers": {
                                         "mandatory": [
