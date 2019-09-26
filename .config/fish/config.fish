@@ -1,5 +1,7 @@
 set -x GOPATH $HOME/Projects/go
-set PATH $GOPATH/bin /usr/local/opt/coreutils/libexec/gnubin /usr/local/sbin $PATH
+set PATH /usr/local/opt/curl/bin $PATH
+set PATH /usr/local/opt/coreutils/libexec/gnubin /usr/local/sbin $PATH
+set PATH $PATH $GOPATH/bin
 
 # Environment variables:
 set -xg EDITOR (which nvim)
