@@ -1,6 +1,6 @@
 set number numberwidth=5
 set tabstop=4
-set mouse=a
+set mouse-=a
 set nopaste
 set nowrap
 set cursorline
@@ -10,11 +10,12 @@ set encoding=utf8
 set noswapfile
 set autoindent
 set smartindent
-set scrolloff=3
+set scrolloff=1000
 set sidescroll=3
 set listchars+=precedes:<,extends:>
 
 filetype plugin indent on
+syntax clear
 syntax on 
 set hidden
 set backspace=indent,eol,start
@@ -43,7 +44,6 @@ au VimLeave * set guicursor=a:ver100
 
 " Use system clipboard for yanking:
 set clipboard+=unnamedplus
-set paste
 
 " Disable those pesky arrow keys:
 nnoremap <Up> <Nop>
