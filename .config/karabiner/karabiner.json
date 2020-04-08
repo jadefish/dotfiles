@@ -254,7 +254,7 @@
                     }
                 }
             ],
-            "name": "Default profile",
+            "name": "MX 518",
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
