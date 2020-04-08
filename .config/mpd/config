@@ -16,6 +16,7 @@ follow_inside_symlinks  "yes"
 bind_to_address "/usr/local/var/run/mpd.sock"
 
 audio_output {
-	type "osx"
-	name "Core Audio"
+	type       "osx"
+	name       "Core Audio"
+	mixer_type "software"
 }
