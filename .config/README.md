@@ -1,3 +1,0 @@
-# dotfiles
-
-Configuration and settings.
