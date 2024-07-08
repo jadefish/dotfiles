@@ -1,0 +1,98 @@
+# keypress_delay_ms: 20
+
+shared:
+  terminals: &terminals
+    - org.gnome.Console
+    - org.gnome.Terminal
+    - org.gnome.Terminal.Preferences
+    - gnome-terminal-server
+
+modmap:
+  - name: Caps Lock -> Escape
+    remap:
+      CapsLock: Esc
+
+  - name: Ctrl -> ⌘
+    remap:
+      LeftCtrl: LeftMeta
+      LeftMeta: LeftCtrl
+      RightCtrl: RightMeta
+      RightMeta: RightCtrl
+
+keymap:
+  - name: Terminal interrupts
+    application:
+      only: *terminals
+    remap:
+      Super-A: Ctrl-A
+      Super-B: Ctrl-B                                                                                
+      Super-C: Ctrl-C                                                                                
+      Super-D: Ctrl-D                                                                                
+      Super-E: Ctrl-E                                                                                
+      Super-F: Ctrl-F                                                                                
+      Super-G: Ctrl-G                                                                                
+      Super-H: Ctrl-H                                                                                
+      Super-I: Ctrl-I                                                                                
+      Super-J: Ctrl-J                                   
+      Super-K: Ctrl-K                                   
+      Super-L: Ctrl-L                                   
+      Super-M: Ctrl-M                                   
+      Super-N: Ctrl-N                                   
+      Super-O: Ctrl-O                                   
+      Super-P: Ctrl-P
+      Super-Q: Ctrl-Q
+      Super-R: Ctrl-R
+      Super-S: Ctrl-S
+      Super-T: Ctrl-T
+      Super-U: Ctrl-U
+      Super-V: Ctrl-V
+      Super-W: Ctrl-W
+      Super-X: Ctrl-X
+      Super-Y: Ctrl-Y
+      Super-Z: Ctrl-Z
+
+  - name: Terminal shortcuts
+    application:
+      only: *terminals
+    remap:
+      Ctrl-T: Ctrl-Shift-T
+      Ctrl-N: Ctrl-Shift-N
+      Ctrl-W: Ctrl-Shift-W
+      Ctrl-Shift-W: Ctrl-Shift-Alt-W
+      Ctrl-C: Ctrl-Shift-C
+      Ctrl-V: Ctrl-Shift-V
+      Ctrl-A: Ctrl-Shift-A
+ 
+  - name: Switch workspaces
+    remap:
+      Ctrl-BTN_SIDE: Super-F14 # previous workspace
+      Ctrl-BTN_EXTRA: Super-F15 # next workspace
+
+  - name: Overview
+    remap:
+      BTN_TASK: F17
+
+  - name: ⌘ Left -> Home
+    remap:
+      Ctrl-Left: Home
+      Shift-Ctrl-Left: Shift-Home
+
+  - name: ⌘ Right -> End
+    remap:
+      Ctrl-Right: End
+      Shift-Ctrl-Right: Shift-End
+
+  - name: Move by word
+    remap:
+      Alt-Left: Ctrl-Left
+      Alt-Right: Ctrl-Right
+
+  - name: Delete by word
+    remap:
+      Alt-Backspace: Ctrl-Backspace
+      Alt-Delete: Ctrl-Delete
+
+  - name: Delete to start/end of line
+    remap:
+      Ctrl-Backspace: [Shift-Home, Backspace]
+      Ctrl-Delete: [Shift-End, Backspace]
